@@ -62,7 +62,7 @@ export const ChatItem=({id,content,member,timestamp,fileUrl,deleted,currentMembe
         form.reset({
             content:content,
         })
-    },[content]);
+    },[content,form]);
     const isLoading=form.formState.isSubmitting;
 
     const onSubmit=async(values:z.infer<typeof formSchema>)=>{
